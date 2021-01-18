@@ -10,7 +10,11 @@ export default new Vuex.Store({
   getters: {
     employees: state => state.employees,
   },
-  mutations: {},
+  mutations: {
+    SET_EMPLOYEES: (state, _employees) => {
+      state.employees = _employees
+    }
+  },
   actions: {
     getEmployees: async ({commit}) => {
         const response = await fetch('http://dummy.restapiexample.com/api/v1/employees');
