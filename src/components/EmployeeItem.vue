@@ -1,8 +1,8 @@
 <template>
   <tr>
     <th scope="row"></th>
-    <td>{{employee.employee_name.split}}</td>
-    <td>{{employee.employee_name.split}}</td>
+    <td>{{employee.employee_name.split(' ')[0]}}</td>
+    <td>{{employee.employee_name.split(' ')[1]}}</td>
     <td>{{employee.employee_age}}</td>
     <td>{{employee.employee_salary}}</td>
   </tr>
@@ -12,7 +12,7 @@
 export default {
   name: 'EmployeeItem',
   props: ['employee'],
-
+  
 }
 </script>
 
