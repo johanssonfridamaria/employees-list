@@ -9,7 +9,7 @@
       </tr>
     </thead>
     <tbody>
-      <employee-item />
+      <employee-item v-for="employee in employees" :key=employee.id :employee=employee  />
     </tbody>
   </table>
 </template>
