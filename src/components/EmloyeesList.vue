@@ -9,24 +9,25 @@
       </tr>
     </thead>
     <tbody>
-    <employee-item />
+      <employee-item />
     </tbody>
   </table>
 </template>
 
 <script>
-import EmployeeItem from './EmployeeItem.vue'
-import { mapActions, mapGetters } from 'vuex' 
+import EmployeeItem from './EmployeeItem.vue';
+import { mapActions, mapGetters } from 'vuex';
 
 export default {
   name: 'EmployeesList',
   components: {
-    EmployeeItem
-  }
-  
-}
+    EmployeeItem,
+  },  
+  computed: {
+    ...mapGetters(['employees'])
+  },
+};
 </script>
 
 <style>
-
 </style>
