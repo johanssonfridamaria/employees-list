@@ -1,7 +1,10 @@
 <template>
-  <div>
-    <h2>Employee</h2>
-  </div>
+  <tr>
+    <th scope="row"></th>
+    <td>Name </td>
+    <td>age</td>
+    <td>salary</td>
+  </tr>
 </template>
 
 <script>
