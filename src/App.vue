@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="card mt-5 rounded">
+    <div class="card my-5 rounded">
       <div class="bg-secondary rounded-top">
         <h1 class="text-center my-3">Employees</h1>
       </div>
