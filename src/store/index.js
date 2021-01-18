@@ -8,9 +8,16 @@ export default new Vuex.Store({
     employees: [],
   },
   getters: {
-    employees: state => state.employees;
+    employees: state => state.employees,
   },
   mutations: {},
-  actions: {},
+  actions: {
+    getEmployees: async ({commit}) => {
+        const response = await fetch('http://dummy.restapiexample.com/api/v1/employees');
+        const employees = await response.data
+        console.log(await employees)
+        commit('SET_EMPLOYEES', employees)
+    }
+  },
   modules: {}
 });
