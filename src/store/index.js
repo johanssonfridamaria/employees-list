@@ -7,7 +7,9 @@ export default new Vuex.Store({
   state: {
     employees: [],
   },
-  getters: {},
+  getters: {
+    employees: state => state.employees;
+  },
   mutations: {},
   actions: {},
   modules: {}
