@@ -16,12 +16,14 @@
 
 <script>
 import EmployeeItem from './EmployeeItem.vue'
+import { mapActions, mapGetters } from 'vuex' 
+
 export default {
   name: 'EmployeesList',
   components: {
     EmployeeItem
   }
-
+  
 }
 </script>
 
