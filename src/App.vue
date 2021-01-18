@@ -1,8 +1,13 @@
 <template>
   <div class="container">
-    <div class="card mt-5">
-      <emloyees-list v-if="employees.length"/>
-      <p v-else>Loading...</p>
+    <div class="card mt-5 rounded">
+      <div class="bg-secondary rounded-top">
+        <h1 class="text-center my-3">Employees</h1>
+      </div>
+      <emloyees-list v-if="employees.length" />
+      <div v-else>
+        <p class="text-center mt-1">Loading...</p>
+      </div>
     </div>
   </div>
 </template>
@@ -16,11 +21,11 @@ export default {
   components: {
     EmloyeesList,
   },
-   methods: {
+  methods: {
     ...mapActions(['getEmployees']),
   },
   computed: {
-    ...mapGetters(['employees'])
+    ...mapGetters(['employees']),
   },
   created() {
     this.getEmployees();
@@ -29,9 +34,8 @@ export default {
 </script>
 
 <style>
-.card{
+.card {
   max-width: 50rem;
   margin: auto;
 }
-
 </style>
