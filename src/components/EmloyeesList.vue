@@ -1,6 +1,6 @@
 <template>
-  <table class="table">
-    <thead>
+  <table class="table table-hover">
+    <thead class="table-light">
       <tr>
         <th scope="col"></th>
         <th scope="col">First name</th>
@@ -10,7 +10,11 @@
       </tr>
     </thead>
     <tbody>
-      <employee-item v-for="employee in employees" :key=employee.id :employee=employee  />
+      <employee-item
+        v-for="employee in employees"
+        :key="employee.id"
+        :employee="employee"
+      />
     </tbody>
   </table>
 </template>
@@ -23,12 +27,17 @@ export default {
   name: 'EmployeesList',
   components: {
     EmployeeItem,
-  },  
+  },
   computed: {
-    ...mapGetters(['employees'])
+    ...mapGetters(['employees']),
   },
 };
 </script>
 
-<style>
+<style scoped>
+@media (max-width: 576px) {
+  th {
+    font-size: 0.9rem !important;
+  }
+}
 </style>
