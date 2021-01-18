@@ -18,5 +18,9 @@ export default {
 </script>
 
 <style>
+.card{
+  max-width: 50rem;
+  margin: auto;
+}
 
 </style>
