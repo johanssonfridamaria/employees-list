@@ -16,7 +16,7 @@
 
 <script>
 import EmployeeItem from './EmployeeItem.vue';
-import { mapActions, mapGetters } from 'vuex';
+import { mapGetters } from 'vuex';
 
 export default {
   name: 'EmployeesList',
