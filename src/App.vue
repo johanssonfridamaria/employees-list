@@ -1,6 +1,8 @@
 <template>
   <div class="container">
-    <emloyees-list/>
+    <div class="card mt-5">
+      <emloyees-list />
+    </div>
   </div>
 </template>
 
@@ -8,10 +10,10 @@
 import EmloyeesList from './components/EmloyeesList.vue';
 
 export default {
-  name: "App",
+  name: 'App',
   components: {
-    EmloyeesList
-  }
+    EmloyeesList,
+  },
 };
 </script>
 
