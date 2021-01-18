@@ -1,7 +1,8 @@
 <template>
   <div class="container">
     <div class="card mt-5">
-      <emloyees-list v-if="employees"/>
+      <emloyees-list v-if="employees.length"/>
+      <p v-else>Loading...</p>
     </div>
   </div>
 </template>
