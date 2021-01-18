@@ -17,9 +17,10 @@ export default new Vuex.Store({
   },
   actions: {
     getEmployees: async ({commit}) => {
-        const response = await fetch('http://dummy.restapiexample.com/api/v1/employees');
-        const employees = await response.data
-        console.log(await employees)
+        const response = await fetch('http://dummy.restapiexample.com/api/v1/employees')
+        const _employees = await response.json()
+        console.log(_employees)
+        const employees = _employees.data
         commit('SET_EMPLOYEES', employees)
     }
   },
