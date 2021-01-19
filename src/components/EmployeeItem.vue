@@ -21,6 +21,10 @@ export default {
 .fas {
   font-size: 1.5rem;
 }
+tr {
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0 1px #ccc;
+}
 @media (max-width: 576px) {
   td {
     font-size: 0.8rem !important;
