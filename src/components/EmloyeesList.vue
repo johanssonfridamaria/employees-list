@@ -1,8 +1,8 @@
 <template>
   <table class="table table-borderless">
-    <thead class="table-light">
+    <thead class="">
       <tr>
-        <th scope="col"></th>
+        <th scope="col" class="icon"></th>
         <th scope="col" class="name text-uppercase">Employee</th>
         <th scope="col" class="age text-uppercase">Age</th>
         <th scope="col" class="salary  text-uppercase">Salary</th>
