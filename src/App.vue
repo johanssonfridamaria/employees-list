@@ -1,8 +1,8 @@
 <template>
   <div class="container">
-    <div class="card my-5 border-0">
-      <div class="bg-secondary rounded">
-        <h1 class="text-center my-3">Employees</h1>
+    <div class="card my-3 border-0">
+      <div class="rounded heading">
+        <h1 class="text-center my-3 text-uppercase text-white-50">Employees</h1>
       </div>
       <emloyees-list v-if="employees.length" />
       <div v-else>
@@ -36,6 +36,9 @@ export default {
 <style>
 body{
   background: #eee;
+}
+.heading{
+  background-color:  #4d8e91;
 }
 .card {
   max-width: 30rem;
