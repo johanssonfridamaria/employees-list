@@ -3,8 +3,7 @@
     <thead class="table-light">
       <tr>
         <th scope="col"></th>
-        <th scope="col">First name</th>
-        <th scope="col">Last name</th>
+        <th scope="col">Employee</th>
         <th scope="col">Age</th>
         <th scope="col">Salary</th>
       </tr>
