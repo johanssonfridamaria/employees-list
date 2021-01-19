@@ -1,11 +1,11 @@
 <template>
   <tr>
-    <th scope="row" class="text-secondary">
+    <th scope="row icon" class="text-secondary">
       <i class="fas fa-user-circle"></i>
     </th>
     <td class="name fw-bold">
-      <div class="d-flex flex-column">
-        <p class="mb-0">{{ employee.employee_name.split(' ')[0] }}</p>
+      <div class="d-flex name-container">
+        <p class="mb-0 me-1">{{ employee.employee_name.split(' ')[0] }}</p>
         <p class="mb-0">{{ employee.employee_name.split(' ')[1] }}</p>
       </div>
     </td>
@@ -23,15 +23,24 @@ export default {
 
 <style scoped>
 .fas {
-  font-size: 1.5rem;
+  font-size: 2rem;
+  color: #4d8e91;
 }
 tr {
-  border-radius: 0.5rem;
-  box-shadow: 0 0 0 1px #ccc;
+    background: #fff;
+}
+.age, .salary, th{
+  padding: 1rem;
+}
+.name{
+  padding: 1rem 1rem 1rem 0;
 }
 @media (max-width: 576px) {
-  td {
-    font-size: 0.8rem !important;
+  .name-container {
+    flex-direction: column !important;
+  }
+  td{
+    font-size: 0.9rem;
   }
 }
 </style>
