@@ -3,9 +3,9 @@
     <thead class="table-light">
       <tr>
         <th scope="col"></th>
-        <th scope="col">Employee</th>
-        <th scope="col">Age</th>
-        <th scope="col">Salary</th>
+        <th scope="col" class="name text-uppercase">Employee</th>
+        <th scope="col" class="age text-uppercase">Age</th>
+        <th scope="col" class="salary  text-uppercase">Salary</th>
       </tr>
     </thead>
     <tbody>
