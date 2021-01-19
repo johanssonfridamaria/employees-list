@@ -35,7 +35,24 @@ export default {
 
 <style>
 .card {
-  max-width: 50rem;
+  max-width: 30rem;
   margin: auto;
+}
+th {
+  width: 5%;
+  padding: 1rem 1rem !important;
+  vertical-align: middle;
+}
+.name {
+  width: 50%;
+  padding: 1rem 1rem 1rem 0 !important;
+}
+.age {
+  width: 20%;
+  padding: 1rem !important;
+}
+.salary {
+  width: 25%;
+  padding: 1rem !important;
 }
 </style>
