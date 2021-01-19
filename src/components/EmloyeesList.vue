@@ -1,11 +1,11 @@
 <template>
-  <table class="table table-borderless">
+  <table class="table table-borderless mt-3">
     <thead class="">
       <tr>
         <th scope="col" class="icon"></th>
         <th scope="col" class="name text-uppercase">Employee</th>
-        <th scope="col" class="age text-uppercase">Age</th>
-        <th scope="col" class="salary  text-uppercase">Salary</th>
+        <th scope="col" class="age text-center text-uppercase">Age</th>
+        <th scope="col" class="salary text-center text-uppercase">Salary</th>
       </tr>
     </thead>
     <tbody>
@@ -34,7 +34,10 @@ export default {
 </script>
 
 <style scoped>
-
+thead th{
+  padding: 0;
+  font-size: 0.8rem;
+}
 table{
   border-spacing: 0 1rem;
   border-collapse: separate;
