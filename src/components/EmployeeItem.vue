@@ -24,6 +24,9 @@ tr {
   border-radius: 0.5rem;
   box-shadow: 0 0 0 1px #ccc;
 }
+td, th{
+  padding: 1rem 0.5rem;
+}
 @media (max-width: 576px) {
   td {
     font-size: 0.8rem !important;
