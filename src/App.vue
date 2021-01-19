@@ -34,25 +34,24 @@ export default {
 </script>
 
 <style>
+body{
+  background: #eee;
+}
 .card {
   max-width: 30rem;
   margin: auto;
+  background: #eee;
 }
-th {
+.icon {
   width: 5%;
-  padding: 1rem 1rem !important;
-  vertical-align: middle;
 }
 .name {
-  width: 50%;
-  padding: 1rem 1rem 1rem 0 !important;
+  width: 40%;
 }
 .age {
-  width: 20%;
-  padding: 1rem !important;
+  width: 25%;
 }
 .salary {
-  width: 25%;
-  padding: 1rem !important;
+  width: 30%;
 }
 </style>
