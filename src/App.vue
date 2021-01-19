@@ -1,7 +1,7 @@
 <template>
   <div class="container">
-    <div class="card my-5 rounded">
-      <div class="bg-secondary rounded-top">
+    <div class="card my-5 border-0">
+      <div class="bg-secondary rounded">
         <h1 class="text-center my-3">Employees</h1>
       </div>
       <emloyees-list v-if="employees.length" />
