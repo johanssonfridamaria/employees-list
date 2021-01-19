@@ -3,8 +3,7 @@
     <th scope="row" class="text-secondary">
       <i class="fas fa-user-circle"></i>
     </th>
-    <td>{{ employee.employee_name.split(' ')[0] }}</td>
-    <td>{{ employee.employee_name.split(' ')[1] }}</td>
+    <td>{{ employee.employee_name }}</td>
     <td>{{ employee.employee_age }}</td>
     <td>{{ employee.employee_salary }}</td>
   </tr>
