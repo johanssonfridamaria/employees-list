@@ -1,5 +1,5 @@
 <template>
-  <table class="table table-hover">
+  <table class="table table-borderless">
     <thead class="table-light">
       <tr>
         <th scope="col"></th>
@@ -35,6 +35,11 @@ export default {
 </script>
 
 <style scoped>
+
+table{
+  border-spacing: 0 1rem;
+  border-collapse: separate;
+}
 @media (max-width: 576px) {
   th {
     font-size: 0.9rem !important;
